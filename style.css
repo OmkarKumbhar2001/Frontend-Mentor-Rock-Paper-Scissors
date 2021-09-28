@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to bottom, hsl(237, 49%, 15%),hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+/* Main top  */
+.main-top{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 2rem auto 1rem auto;
+    border: 2px solid rgb(196, 192, 192);
+    border-radius: 0.7rem; 
+    padding: 1.5rem 0.1rem;
+}
+.Score-Card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    height: 6.5rem;
+    width: 7rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 4rem;
+}
+.score{
+    color: rgb(151, 151, 245);
+    font-size: 1.5rem;
+}
+.zero{
+    color: gray;
+    font-size: 4rem;
+}
+.logo{
+    position: relative;
+    right: 4rem;
+    width: 15%;
+}
+/* Main top complete */
+/* First Step */
+.first-main-screen{
+    background-size: 2px;
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    justify-content:center;
+    align-items: center;
+    margin: 4rem auto 1rem auto;
+}
+.tridiv{
+    order: 2;
+}
+/* imgdivsection */
+.paper,.scissors,.rock{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border-radius: 100rem;
+    width: 220%;
+    height: 6rem;
+    display: flex;
+    justify-content:center;
+    box-shadow: inset 0rem 1rem 1rem rgb(139, 139, 139);
+}
+.paperdiv{
+    order: 0;
+    position: relative;
+    top: -7em;
+    right: -3em;
+    
+}
+.scissorsdiv{
+    order: 1;
+    position: relative;
+    top: -7em;
+    right: -14.5em;
+}
+.rockdiv{
+    order: 3;
+    position: relative;
+    top: 5em;
+    right: 14em;
+}
+.paper{
+    background-image: url(images/icon-paper.svg);
+    border: 22px solid hsl(230, 89%, 62%);
+}
+.scissors{
+    background-image: url(images/icon-scissors.svg);
+    border: 22px solid hsl(40, 84%, 53%);
+}
+.rock{
+    background-image: url(images/icon-rock.svg);
+    border: 22px solid hsl(349, 70%, 56%);
+}
+.end{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-content: center;
+    justify-content: flex-end;
+    height: 2rem;
+}
+.rules{
+    border: 2px solid #fff;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%; 
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.rules-1{
+    display: none;
+}
+/* First step complete */
+/* Second step */
+.second-main-screen{
+    display: flex;
+    width: 56%;
+    align-self: center;
+    height: 20rem;
+    margin-top:2rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.second-screen{
+    display: none;
+}
+.nameofpicker{
+    display: flex;
+    width: 85%;
+    align-self: center;
+    height: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    color: azure;
+}
+.nameofpicker-2{
+    display: none;
+}
+.name{
+    font-size: 1.5rem;
+}
+.imagesof{
+    display: flex;
+    justify-content: space-evenly;
+}
+.lose-win{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.youpicked{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.playAgain{
+    height: 2.6rem;
+    margin-top: 1rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+}
+.win-lose{
+    display: none;
+}
+/* LHS */
+.circle-one,.circle-two,.circle-three{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    background-size: 4rem;
+    border-radius: 100rem;
+    width: 11rem;
+    height: 11rem;
+    display: flex; 
+    box-shadow: inset 0rem 1rem 1rem rgb(139, 139, 139);
+}
+.circle-one{
+    background-image: url(images/icon-paper.svg);
+    border: 30px solid hsl(230, 89%, 62%);
+}
+.circle-two{
+    background-image: url(images/icon-scissors.svg);
+    border: 30px solid hsl(40, 84%, 53%);
+}
+.circle-three{
+    background-image: url(images/icon-rock.svg);
+    border: 30px solid hsl(349, 70%, 56%);
+    
+}
+/* RHS */
+.computerclass{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(214, 47%, 23%);
+    border: 30px solid hsl(214, 47%, 23%);
+    background-size: 4rem;
+    border-radius: 100rem;
+    width: 12rem;
+    height: 12rem;
+    display: flex; 
+}
+.circle-i,.circle-ii,.circle-iii{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    background-size: 4rem;
+    border-radius: 100rem;
+    width: 11rem;
+    height: 11rem;
+    display: flex; 
+    box-shadow: inset 0rem 1rem 1rem rgb(139, 139, 139);
+}
+.circle-i{
+    background-image: url(images/icon-paper.svg);
+    border: 30px solid hsl(230, 89%, 62%);
+}
+.circle-ii{
+    background-image: url(images/icon-scissors.svg);
+    border: 30px solid hsl(40, 84%, 53%);
+}
+.circle-iii{
+    background-image: url(images/icon-rock.svg);
+    border: 30px solid hsl(349, 70%, 56%);    
+}
+
+.rulesbackground{
+    display: none;
+    position: absolute;
+    top: 5rem;
+    align-self: center;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    height: 25rem;
+    width: 23em;
+}
+.rulesname{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    position: relative;
+    top: 1rem;
+    left:1rem;
+    color: rgb(73, 82, 100);
+}
+.x{
+    font-size: 2rem;
+    font-weight:lighter;
+    position: relative;
+    top: 0rem;
+    left:12rem;
+    color: rgb(73, 82, 100);
+    cursor: pointer;
+}
+.ruleimg{
+    position: relative;
+    top: 3rem;
+    left: 1rem;
+}
+/* Second screen Complete */
+.first-screen{
+    display: none;
+}
+/* animation */
+/* animation: circle 6s linear infinite */
+.circle-ripple {
+    background-color: #fff;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    animation: ripple 0.7s linear infinite;
+  } 
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(76, 62, 156, 0.3), 0 0 0 1em rgba(123, 121, 253, 0.3), 0 0 0 3em rgba(111, 101, 255, 0.3), 0 0 0 5em rgba(101, 155, 255, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 1em rgba(108, 85, 238, 0.3), 0 0 0 3em rgba(101, 150, 255, 0.3), 0 0 0 5em rgba(134, 101, 255, 0.3), 0 0 0 8em rgba(101, 255, 120, 0);
+    }
+  }
+  @media(max-width:1016px){
+    .second-main-screen{
+        width: 80%;
+    }
+  }
+  @media(max-width:811px){
+    .second-main-screen{
+        align-self: center;
+        height: 30rem;
+        margin-top:1rem;
+        flex-direction: column;
+        justify-content:start;
+        width: 100%;
+    }
+    .nameofpicker{
+        display: none;
+    }
+    .nameofpicker-2{
+        display: flex;
+        width: 100%;
+        align-self: center;
+        height: 2rem;
+        justify-content: space-around;
+        text-align: center;
+        color: azure;
+        margin-top: 2rem;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .imagesof{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .userSelected{
+        order: 0;
+    }
+    .lose-win{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        order: 2;
+        position: absolute;
+        top: 28rem;
+    }
+    .computerclass{
+        order: 1;
+        border: 20px solid hsl(214, 47%, 23%);
+        background-size: 3rem;
+        width: 8rem;
+        height: 8rem; 
+    }
+    .circle-ripple {
+        width: 10rem;
+        height: 10rem;
+      }
+    .circle-i,.circle-ii,.circle-iii,.circle-one,.circle-two,.circle-three{
+        background-size: 2.5rem;
+        width: 8rem;
+        height: 8rem;
+    }
+    .circle-i,.circle-one{
+        border: 20px solid hsl(230, 89%, 62%);
+    }
+    .circle-ii,.circle-two{
+        border: 20px solid hsl(40, 84%, 53%);
+    }
+    .circle-iii,.circle-three{
+        border: 20px solid hsl(349, 70%, 56%);    
+    }
+    .youpicked{
+        font-size: 3rem;
+    }
+    .main-top{
+        width: 90%;
+        margin: 1rem auto 1rem auto;
+        border: 2px solid rgb(196, 192, 192);
+        border-radius: 0.7rem; 
+        padding: 1.5rem 0.1rem;
+    }
+    .Score-Card{
+        border-radius: 0.3rem;
+        height:4rem;
+        width: 5rem;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        left: 1rem;
+    }
+    .score{
+        color: rgb(151, 151, 245);
+        font-size: 1rem;
+    }
+    .zero{
+        color: gray;
+        font-size: 2rem;
+    }
+    .logo{
+        position: relative;
+        right: 0rem;
+        width: 45%;
+        height: 4rem;
+    }
+    .first-main-screen{
+        width: 100%;
+        height: 20rem;
+        justify-content:center;
+        align-items: center;
+        margin: 4rem auto 1rem auto;
+        align-self: left;
+    }
+    .end{
+        justify-content: center;
+    }
+    .rules{
+        height: 3rem;
+        width: 30%; 
+    }
+  }
+  @media(max-width:476px){
+    .rulesbackground{
+        display: none;
+        position: absolute;
+        top: 0rem;
+        border-radius: 1rem;
+        height: 100vh;
+        width: 100%;
+    }
+    .rulesname{
+        position: relative;
+        top: 1rem;
+        left:1rem;
+    }
+    .x{
+        font-size: 2rem;
+        font-weight:lighter;
+        position: relative;
+        top: 0rem;
+        left:12rem;
+    }
+    .ruleimg{
+        position: relative;
+        top: 3rem;
+        left: 1rem;
+    }
+  }
+  @media(max-width:400px){
+      .first-main-screen{
+          position: relative;
+          left: 0rem;
+      }
+      .paper,.scissors,.rock{
+        width: 210%;
+        height: 5rem;
+    }
+    .paper{
+        background-image: url(images/icon-paper.svg);
+        border: 18px solid hsl(230, 89%, 62%);
+    }
+    .scissors{
+        background-image: url(images/icon-scissors.svg);
+        border: 18px solid hsl(40, 84%, 53%);
+    }
+    .rock{
+        background-image: url(images/icon-rock.svg);
+        border: 18px solid hsl(349, 70%, 56%);
+    }
+  }
+  @media(max-width:360px){
+    .first-main-screen{
+        position: relative;
+        left:-1rem;
+        align-self: center;
+    }
+  }

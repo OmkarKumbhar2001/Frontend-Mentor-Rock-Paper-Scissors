@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="main-top">
+    <img class="logo" src="images/logo.svg" alt="" srcset="">
+
+    <div class="Score-Card">
+      <div><b class="score">SCORE</b></div>
+      <div><b class="zero">0</b></div>
+    </div>
+  </div>
+  <!-- Main top Complete dont change -->
+  <!-- Main screen Start -->
+  <div class="first-main-screen">
+    <div class="tridiv">
+      <img class="triangle" src="images/bg-triangle.svg" alt="" srcset="">
+    </div>
+    <div class="paperdiv">
+      <div class="paper user-icon" id="circle-one"></div>
+    </div>
+    <div class="scissorsdiv">
+      <div class="scissors user-icon" id="circle-two"></div>
+    </div>
+    <div class="rockdiv">
+      <div class="rock user-icon" id="circle-three"></div>
+    </div>
+  </div>
+  <div class="second-main-screen second-screen">
+    <div class="nameofpicker">
+      <b class="name">YOU PICKED</b>
+      <b class="name">THE HOUSE PICKED</b>
+    </div>
+    <div class="imagesof">
+      <div class="userSelected"></div>
+      <div class="win-lose lose-win" id="desided-win-lose">
+        <b class="youpicked"></b>
+        <button class="playAgain"> PLAY AGAIN</button>
+      </div>
+      <div class="computerclass" id=""></div>
+    </div>
+    <div class="nameofpicker-2">
+      <b class="name">YOU PICKED</b>
+      <b class="name">THE HOUSE PICKED</b>
+    </div>
+  </div>
+  <div class="end">
+    <b class="rules">RULES</b>
+  </div>
+  <div class="rulesbackground">
+    <div><b class="rulesname">RULES<img class="x" src="images/icon-close.svg" alt="" srcset=""></div>
+    <img class="ruleimg" src="images/image-rules.svg" alt="" srcset="">
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
